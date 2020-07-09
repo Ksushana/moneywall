@@ -1,0 +1,30 @@
+extends pug/layout.pug
+
+block variables
+  - let bodyClasses = 'sign-page';
+
+block content
+  .container-top.white
+    .container
+      .container__header
+          h1 Электронная подпись договора <span>03597</span>
+          +link-text("< Назад", "#", "container__link" )
+  .container.white
+    .sign
+      table
+        tr
+          td дата начала
+          td Страна
+          td город
+        tr
+          td 01.05.2020
+          td RU
+          td Владивосток
+
+      p Вам отправлен код на мобильный телефон. Введите его и нажмите конопку «Подписать»
+      form(action="")
+        input( type="number" name="number"  id="sign-number" min="1")
+        button( type="submit" class="btn-blue") Подписать
+
+      p.sign__agree Настоящим акцептирую
+        a(href="#") Публичную оферту на использование сервисов ООО «MW MRC»

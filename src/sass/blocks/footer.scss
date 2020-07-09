@@ -1,0 +1,36 @@
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 163px 20px;
+  background-color: $color-white;
+  a {
+    display: block;
+  }
+
+  .footer__links {
+    a {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      text-decoration-line: underline;
+      color: $color-blue;
+    }
+
+  }
+  .footer__contacts {
+    text-align: right;
+    font-weight: 300;
+font-size: 18px;
+line-height: 140%;
+/* or 25px */
+
+text-align: right;
+
+color: #000000;
+
+    p {
+      margin: 0;
+    }
+  }
+}

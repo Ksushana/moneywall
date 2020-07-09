@@ -1,0 +1,79 @@
+.contracts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-top: 26px;
+  padding-bottom: 154px;
+  // justify-content: space-between;
+}
+
+.contracts__note {
+  width: 304px;
+  margin-left: 36px;
+  margin-bottom: 51px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.contract__item {
+  background: $color-white;
+  border: 0.5px solid #C5CCD1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 31.5%;
+  padding: 5px 13px 41px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  min-height: 402px;
+
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #212429;
+    margin-bottom: 12px;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 27px;
+  }
+
+  td {
+    border-bottom: 1px solid #DDE2E5;
+    height: 48px;
+  }
+
+  td:first-child {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ACB5BD;
+  }
+
+  td:last-child {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+    color: #495057;
+  }
+}
+
+.contract__signdate {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 111% */
+
+  text-align: center;
+
+  color: #ACB5BD;
+
+  margin: 18px 0px 0px;
+}

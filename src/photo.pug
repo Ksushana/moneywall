@@ -1,0 +1,30 @@
+extends pug/layout.pug
+
+block variables
+  - let bodyClasses = 'photo-page';
+
+block content
+  .container-top
+    .container
+      .container__header
+          h1 Фото паспорта
+          +link-text("< Назад", "#", "container__link" )
+  .container
+
+    .pass-photo
+      .pass-photo__upload
+
+        input.visually-hidden( type="file" name="photo" id="file-upload" accept="image/*,image/jpeg" placeholder="fff")
+        label( for="file-upload" )
+          +svg("upload", "49", "59")
+          | Сделайте или загрузите фото разворота паспорта с&nbsp;фотографией
+
+      .pass-photo__upload
+
+        input.visually-hidden( type="file" name="photo" id="file-upload" accept="image/*,image/jpeg" placeholder="fff")
+        label( for="file-upload" )
+          +svg("upload", "49", "59")
+          | Сделайте или загрузите фото разворота паспорта с&nbsp;пропиской
+      .pass-photo__upload-info
+        p Нажимая на кнопку «сохранить» вы&nbsp;соглашаетесь с Пользовательским соглашением и Политикой конфиденциальности.
+        button.btn-blue Сохранить

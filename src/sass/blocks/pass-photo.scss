@@ -1,0 +1,60 @@
+.pass-photo {
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 121px;
+}
+
+.pass-photo__upload {
+
+  width: 31.4%;
+
+  label {
+    display: block;
+    background: #FFFFFF;
+    width: 100%;
+    height: 192px;
+
+    border: 1px solid #DDE2E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #ACB5BD;
+
+    padding: 32px 19% 36px;
+    transition: box-shadow 0.4s;
+
+    svg {
+      display: block;
+      margin: 0 auto 13px;
+    }
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 37px 0px rgba(219,212,219,1);
+-moz-box-shadow: 0px 0px 37px 0px rgba(219,212,219,1);
+box-shadow: 0px 0px 37px 0px rgba(219,212,219,1);
+    }
+
+  }
+}
+
+.pass-photo__upload-info {
+  flex-grow: 1;
+  max-width: 31.5%;
+  padding-left: 8.5%;
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: -4px;
+    margin-bottom: 59px;
+
+
+    color: #000000;
+  }
+}

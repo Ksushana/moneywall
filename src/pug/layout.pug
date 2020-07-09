@@ -1,0 +1,40 @@
+
+include mixins
+
+block variables
+- let mainTitle = "Moneywall";
+
+doctype html
+html( lang="ru" )
+  head
+    meta( charset="UTF-8" )
+    title #{mainTitle} !{title && "| " + title}
+    link( rel="stylesheet" href="css/style.min.css" )
+    meta( name="viewport" content="width=device-width, initial-scale=1.0" )
+    link( rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/roboto-light.woff2" as="font" type="font/woff2" crossorigin )
+
+
+  body( class=bodyClasses )
+    header.header
+      a.header__logo( href=(isMain ? null : 'main.html') )
+        img( src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="227" height="36" alt=mainTitle )
+
+    main
+      block content
+
+    footer.footer
+      .footer__links
+        +link-text("Публичная оферта на использование сервисов ООО «MW MRC»", "#", "footer__link" )
+        +link-text("Политика конфиденциальности ООО «MW MRC»»", "#", "footer__link" )
+        +link-text("Согласие на обработку персональных данных", "#", "footer__link" )
+
+      .footer__contacts
+        +link-text("+7 (499) 110-93-17", "tel:+74991109317", "footer__contact-link" )
+        +link-text("hello@moneywall.io", "mailto:hello@moneywall.io", "footer__contact-link" )
+        p © 2015–2020 Moneywall
+    block scripts
+    script( src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" )
+    script( src="js/script.min.js" )
+

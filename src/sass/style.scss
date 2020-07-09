@@ -1,0 +1,17 @@
+/* Vendor */
+@import "vendor/normalize";
+/* General */
+@import "general/variables";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/global";
+/* Blocks */
+@import "blocks/welcome";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/contracts";
+@import "blocks/passport-form";
+@import "blocks/pass-photo";
+@import "blocks/sign";
+@import "blocks/conditions";
+@import "blocks/data";

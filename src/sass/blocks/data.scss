@@ -1,0 +1,83 @@
+.passport-data {
+  display: flex;
+  padding-top: 35px;
+}
+
+.passport-data__part {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+
+  &--photos {
+    padding-left: 76px;
+    img {
+      height: 172px;
+      width: 225px;
+      object-fit: contain;
+
+      padding-top: 11px;
+
+
+    }
+
+    .passport-data__photo {
+      margin-right: 20px;
+    }
+  }
+
+
+}
+
+.passport-data__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 34px;
+
+  &--name {
+    padding-right: 13.4%;
+  }
+
+  &--birthdate {
+    padding-right: 7%;
+  }
+
+  &--birthplace {
+    padding-bottom: 48px;
+    margin-right: 80px;
+  }
+
+  &--passport {
+    padding-right: 15%;
+  }
+
+  &--passport-date {
+    padding-right: 11.3%;
+  }
+
+  &--address {
+    width: 61%;
+    margin-left: auto;
+    margin-right: 5%;
+  }
+
+
+
+
+  span:first-child {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ACB5BD;
+    padding-bottom: 7px;
+  }
+
+  span:last-child {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #495057;
+
+  }
+}

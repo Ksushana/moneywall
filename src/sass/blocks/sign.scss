@@ -1,0 +1,81 @@
+.sign {
+  margin-top: -14px;
+  table {
+    tr:first-child {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ACB5BD;
+
+      td {
+        padding-bottom: 6px;
+        padding-right: 41px;
+      }
+    }
+
+    tr:last-child {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 20px;
+      color: #495057;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+    margin-top: 46px;
+    margin-left: 2px;
+    width: 34%;
+
+    &.sign__agree {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+
+      margin-top: 78px;
+      padding-bottom: 20px;
+      margin-bottom: auto;
+
+      color: #495057;
+      width: 100%;
+      a {
+        display: block;
+        color: #377BFF;
+      }
+    }
+  }
+
+  form {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    background: #FFFFFF;
+    border: 1px solid #DDE2E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 191px;
+    height: 50px;
+    padding: 17px 24px 14px;
+    outline: none;
+    margin-right: 6%;
+    transition: border 0.4s;
+
+    &:focus {
+      border: 1px solid #4263EB;
+      box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+    }
+  }
+}
+
+.sign-page {
+  background-color:  $color-white;
+}
+

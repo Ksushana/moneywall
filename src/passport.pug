@@ -1,0 +1,57 @@
+extends pug/layout.pug
+
+block variables
+  - let bodyClasses = 'passport-page';
+
+block content
+  .container-top
+    .container
+      .container__header( class=(isMain ? "none" : null ) )
+          h1 Паспортные данные
+          +link-text("< Назад", "#", "container__link" )
+  .container
+    .passport-form
+      form(action="")
+        p.onethird
+          label(for="surname") Фамилия
+          input( type="text" id="surname" name="surname" pattern="^[А-Яа-яЁё\s]+$" autofocus required)
+        p.onethird
+          label(for="name") Имя
+          input( type="text" id="name" name="name"  pattern="^[А-Яа-яЁё\s]+$" required)
+        p.onethird
+          label(for="patronymic") Отчество
+          input( type="text" id="patronymic" name="patronymic"  pattern="^[А-Яа-яЁё\s]+$" required)
+        p.small
+          label(for="patronymic") Дата рождения
+          input( type="date" id="birthday" name="birthday" required)
+        p.radio
+          span Пол
+
+          input.visually-hidden( type="radio" name="gender" value="female" id="female" checked )
+          label(for="female") Жен
+
+          input.visually-hidden( type="radio" name="gender" value="male" id="male")
+          label(for="male") Муж
+        p.grow
+          label(for="birthplace") Место рождения
+          input( type="text" name="birthplace"  id="birthplace" required)
+        p.break
+        p.medium
+          label(for="number" ) Серия и нормер
+          input( type="text" name="number"  id="number" min="1" required)
+        p.small-fix
+          label(for="issuedate") Дата выдачи
+          input( type="date" name="issuedate"  id="issuedate" required)
+        p.small-fix
+          label(for="code") Код подразделения
+          input( type="text" name="code"  id="code" required)
+        p.break.noheight
+        p.medium
+          label(for="postcode") Почтовый индекс
+          input( type="text" name="postcode"  id="postcode" min="1"  required)
+        p.grow
+          label(for="address") Адрес регистрации
+          input( type="text" name="address"  id="address" required)
+        p.break.noheight
+        button( type="submit" class="btn-blue") Применить
+

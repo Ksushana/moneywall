@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moneywall </title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-light.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="passport-page">
+  <header class="header"><a class="header__logo" href="main.html"><img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="227" height="36" alt="Moneywall"></a></header>
+  <main>
+    <div class="container-top">
+      <div class="container">
+        <div class="container__header">
+          <h1>Паспортные данные</h1><a class="link-text container__link" href="#"><span>< Назад</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="passport-form">
+        <form action="">
+          <p class="onethird"><label for="surname">Фамилия</label><input type="text" id="surname" name="surname" pattern="^[А-Яа-яЁёs]+$" autofocus required></p>
+          <p class="onethird"><label for="name">Имя</label><input type="text" id="name" name="name" pattern="^[А-Яа-яЁёs]+$" required></p>
+          <p class="onethird"><label for="patronymic">Отчество</label><input type="text" id="patronymic" name="patronymic" pattern="^[А-Яа-яЁёs]+$" required></p>
+          <p class="small"><label for="patronymic">Дата рождения</label><input type="date" id="birthday" name="birthday" required></p>
+          <p class="radio"><span>Пол</span><input class="visually-hidden" type="radio" name="gender" value="female" id="female" checked><label for="female">Жен</label><input class="visually-hidden" type="radio" name="gender" value="male" id="male"><label for="male">Муж</label></p>
+          <p class="grow"><label for="birthplace">Место рождения</label><input type="text" name="birthplace" id="birthplace" required></p>
+          <p class="break"></p>
+          <p class="medium"><label for="number">Серия и нормер</label><input type="text" name="number" id="number" min="1" required></p>
+          <p class="small-fix"><label for="issuedate">Дата выдачи</label><input type="date" name="issuedate" id="issuedate" required></p>
+          <p class="small-fix"><label for="code">Код подразделения</label><input type="text" name="code" id="code" required></p>
+          <p class="break noheight"></p>
+          <p class="medium"><label for="postcode">Почтовый индекс</label><input type="text" name="postcode" id="postcode" min="1" required></p>
+          <p class="grow"><label for="address">Адрес регистрации</label><input type="text" name="address" id="address" required></p>
+          <p class="break noheight"></p><button class="btn-blue" type="submit">Применить</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__links"><a class="link-text footer__link" href="#"><span>Публичная оферта на использование сервисов ООО «MW MRC»</span></a><a class="link-text footer__link" href="#"><span>Политика конфиденциальности ООО «MW MRC»»</span></a><a class="link-text footer__link" href="#"><span>Согласие на обработку персональных данных</span></a></div>
+    <div class="footer__contacts"><a class="link-text footer__contact-link" href="tel:+74991109317"><span>+7 (499) 110-93-17</span></a><a class="link-text footer__contact-link" href="mailto:hello@moneywall.io"><span>hello@moneywall.io</span></a>
+      <p>© 2015–2020 Moneywall</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.welcome {
+  span.old {
+    display: none;
+  }
+
+  &.old {
+
+    .container__photo {
+      display: block !important;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      color: #495057;
+      width: 320px;
+      height: 48px;
+      border: 1px solid #ACB5BD;
+      box-sizing: border-box;
+      border-radius: 8px;
+      margin-top: 11px;
+      padding-top: 15px;
+    }
+
+    span.old {
+      display: inline;
+    }
+
+    span.new {
+      display: none;
+    }
+    .contracts__note {
+      display: none;
+
+    }
+
+    .contracts {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 36px;
+
+      .contract__item {
+        margin-right: 2.7%;
+
+        &:nth-of-type(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

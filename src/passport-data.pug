@@ -1,0 +1,44 @@
+extends pug/layout.pug
+
+block variables
+  - let bodyClasses = 'data';
+
+block content
+  .container-top
+    .container
+      .container__header
+          h1 Паспортные данные
+          +link-text("< Назад", "#", "container__link" )
+  .container
+    .passport-data
+      div.passport-data__part
+        div.passport-data__item.passport-data__item--name
+          span ФИО
+          span Каменева Ирина Владимировна
+        div.passport-data__item.passport-data__item--birthdate
+          span Дата рождения
+          span 10.10.1961
+        div.passport-data__item.passport-data__item--gender
+          span Пол
+          span Жен
+        div.passport-data__item.passport-data__item--birthplace
+          span место рождения
+          span Красноярский край, Житниковский р-н, д. Сколково
+        div.passport-data__item.passport-data__item--passport
+          span Серия и номер
+          span 0405 454525
+        div.passport-data__item.passport-data__item--passport-date
+          span Дата выдачи
+          span 10.10.2010
+        div.passport-data__item.passport-data__item--code
+          span Код подразделения
+          span 550-240
+        div.passport-data__item.passport-data__item--zip
+          span Индекс
+          span 353657
+        div.passport-data__item.passport-data__item--address
+          span Адрес регистрации
+          span Красноярский край, Житниковский р-н, д. Сколково, ул. Каляева, 32
+      div.passport-data__part.passport-data__part--photos
+        img.passport-data__photo( src="img/passport1.jpg")
+        img.passport-data__address( src="img/passport2.jpg")
