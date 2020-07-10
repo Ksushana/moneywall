@@ -49,8 +49,8 @@
       &.radio {
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 31px;
-        width: 222px;
+        padding-left: 22px;
+        width: 212px;
 
         @include mobile {
           padding-left: 16px;
@@ -137,7 +137,7 @@
       }
 
       &.small {
-        width: 161px;
+        width: 171px;
 
         @include mobile {
           width: 155px;
@@ -145,7 +145,7 @@
       }
 
       &.small-fix {
-        width: 159px;
+        width: 171px;
         margin-right: 2.6%;
 
 
@@ -238,7 +238,6 @@
   }
 
   input[type="date"] {
-    padding: 17px 13px 14px 13px;
   }
 
   textarea {
