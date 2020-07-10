@@ -8,11 +8,12 @@ block content
   .container-top
     .container
       .container__header( class=(isMain ? "none" : null ) )
-          h1 Добро пожаловать<span class="new"> в Moneywall — сервис оплаты частями</span><span class="old">, Ирина</span>
-          +link-text("Паспортные данные", "#", "container__link container__photo" )
+          h1 Добро пожаловать<span class="new"> в&nbsp;Moneywall — сервис оплаты частями</span><span class="old">, Ирина</span>
+          +link-text("Паспортные данные", "passport-data.html", "container__link container__link-pass" )
 
   .container
-    .contracts
+    .contracts(id="accordion")
+      h3.contracts__accordion-header <span>Договор </span><span>03597</span>
       .contract__item.contract__item--new
         h3 Договор <span>03597</span>
         table
@@ -30,41 +31,42 @@ block content
             td Владивосток
 
         button.btn-blue Подписать
-      p.contracts__note Перед тем, как вы подпишите первый договор, нужно будет заполнить <a href="#" >паспортные данные</a>
-      //- .contract__item.contract__item--signed
-      //-   h3 Договор <span>03025</span>
-      //-   table
-      //-     tr
-      //-       td дата начала
-      //-       td 01.05.2020
-      //-     tr
-      //-       td дата окончания
-      //-       td 21.05.2020
-      //-     tr
-      //-       td Страна
-      //-       td RU
-      //-     tr
-      //-       td город
-      //-       td Владивосток
+        p.contracts__note Перед тем, как вы подпишите первый договор, нужно будет заполнить <a href="#" >паспортные данные</a>
+      h3.contracts__accordion-header <span>Договор </span><span>03025</span>
+      .contract__item.contract__item--signed
+        h3 Договор <span>03025</span>
+        table
+          tr
+            td дата начала
+            td 01.05.2020
+          tr
+            td дата окончания
+            td 21.05.2020
+          tr
+            td Страна
+            td RU
+          tr
+            td город
+            td Владивосток
 
-      //-   p.contract__signdate Подписан <span>02.02.2020</span>
+        p.contract__signdate Подписан <span>02.02.2020</span>
+      h3.contracts__accordion-header <span>Договор </span><span>03025</span>
+      .contract__item.contract__item--signed
+        h3 Договор <span>03025</span>
+        table
+          tr
+            td дата начала
+            td 01.05.2020
+          tr
+            td дата окончания
+            td 21.05.2020
+          tr
+            td Страна
+            td RU
+          tr
+            td город
+            td Владивосток
 
-      //- .contract__item.contract__item--signed
-      //-   h3 Договор <span>03025</span>
-      //-   table
-      //-     tr
-      //-       td дата начала
-      //-       td 01.05.2020
-      //-     tr
-      //-       td дата окончания
-      //-       td 21.05.2020
-      //-     tr
-      //-       td Страна
-      //-       td RU
-      //-     tr
-      //-       td город
-      //-       td Владивосток
-
-      //-   p.contract__signdate Подписан <span>02.02.2020</span>
-
+        p.contract__signdate Подписан <span>02.02.2020</span>
+    +link-text("Паспортные данные", "passport-data.html", "container__link container__link--mob" )
 

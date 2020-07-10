@@ -34,7 +34,8 @@ block content
           label(for="male") Муж
         p.grow
           label(for="birthplace") Место рождения
-          input( type="text" name="birthplace"  id="birthplace" required)
+          //- input( type="text" name="birthplace"  id="birthplace" required)
+          textarea(id="birthplace", name="birthplace", cols="30", rows="1")
         p.break
         p.medium
           label(for="number" ) Серия и нормер
@@ -42,7 +43,7 @@ block content
         p.small-fix
           label(for="issuedate") Дата выдачи
           input( type="date" name="issuedate"  id="issuedate" required)
-        p.small-fix
+        p.small-fix.mobile
           label(for="code") Код подразделения
           input( type="text" name="code"  id="code" required)
         p.break.noheight
@@ -51,7 +52,8 @@ block content
           input( type="text" name="postcode"  id="postcode" min="1"  required)
         p.grow
           label(for="address") Адрес регистрации
-          input( type="text" name="address"  id="address" required)
+          textarea(id="address", name="address", cols="30", rows="1")
+          //- input( type="text" name="address"  id="address" required)
         p.break.noheight
-        button( type="submit" class="btn-blue") Применить
+        button( type="submit" class="btn-blue") Далее
 

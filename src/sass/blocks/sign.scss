@@ -1,5 +1,10 @@
 .sign {
   margin-top: -14px;
+
+  @include mobile {
+    margin-top: 6px;
+    padding-left: 19px;
+  }
   table {
     tr:first-child {
       font-weight: 500;
@@ -8,10 +13,17 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #ACB5BD;
-
       td {
         padding-bottom: 6px;
         padding-right: 41px;
+
+        @include mobile {
+          padding-right: 30px;
+        }
+
+        &:nth-child(2) {
+          padding-right: 17px;
+        }
       }
     }
 
@@ -20,6 +32,8 @@
       font-size: 18px;
       line-height: 20px;
       color: #495057;
+
+
     }
   }
 
@@ -32,6 +46,11 @@
     margin-left: 2px;
     width: 34%;
 
+    @include mobile {
+      margin-top: 37px;
+      width: 95%;
+    }
+
     &.sign__agree {
       font-weight: normal;
       font-size: 18px;
@@ -43,6 +62,13 @@
 
       color: #495057;
       width: 100%;
+
+      @include mobile {
+        margin-top: 31px;
+        font-size: 16px;
+        line-height: 120.69%;
+        margin-bottom: 21px;
+      }
       a {
         display: block;
         color: #377BFF;
@@ -54,6 +80,11 @@
     margin-top: 30px;
     display: flex;
     align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+      margin-left: -30px;
+    }
   }
 
   input {
@@ -68,6 +99,12 @@
     margin-right: 6%;
     transition: border 0.4s;
 
+    @include mobile {
+      margin: 5px auto 34px;
+      width: 255px;
+    }
+
+
     &:focus {
       border: 1px solid #4263EB;
       box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
@@ -77,5 +114,11 @@
 
 .sign-page {
   background-color:  $color-white;
+
+  @include mobile {
+    .container__header {
+      padding: 6px 22px 7px;
+    }
+  }
 }
 

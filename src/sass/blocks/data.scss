@@ -1,6 +1,12 @@
 .passport-data {
   display: flex;
   padding-top: 35px;
+  flex-wrap: wrap;
+
+  @include mobile {
+    padding-top: 28px;
+    padding-left: 14px;
+  }
 }
 
 .passport-data__part {
@@ -8,20 +14,50 @@
   flex-wrap: wrap;
   width: 50%;
 
+  @include laptop {
+    width: 70%;
+  }
+
+  @include mobile {
+    width: 100%;
+
+  }
+
   &--photos {
     padding-left: 76px;
+    @include laptop {
+      width: 30%;
+    }
+
+    @include tablet {
+      padding-left: 0;
+    }
+
+    @include mobile {
+      width: 100%;
+      margin-left: -20px;
+      margin-top: 43px;
+      margin-bottom: 124px;
+      flex-direction: column;
+    }
     img {
       height: 172px;
       width: 225px;
       object-fit: contain;
 
       padding-top: 11px;
+      margin: 0 auto;
 
 
     }
 
     .passport-data__photo {
       margin-right: 20px;
+
+      @include mobile {
+        margin: 0 auto 37px;
+      }
+
     }
   }
 
@@ -33,31 +69,71 @@
   flex-direction: column;
   padding-bottom: 34px;
 
+  @include laptop {
+    margin-right: 6%;
+  }
+
   &--name {
     padding-right: 13.4%;
+
+    @include mobile {
+      padding-right: 0;
+    }
   }
 
   &--birthdate {
     padding-right: 7%;
+
+    @include mobile {
+      padding-right: 5%;
+    }
   }
 
   &--birthplace {
     padding-bottom: 48px;
     margin-right: 80px;
+    @include mobile {
+      padding-right: 0;
+      margin-right: 25px;
+      padding-bottom: 41px;
+
+    }
+  }
+
+  &--code {
+    @include mobile {
+      margin-right: 13%;
+    }
   }
 
   &--passport {
     padding-right: 15%;
+
+    @include mobile {
+      padding-right: 19%;
+    }
   }
 
   &--passport-date {
     padding-right: 11.3%;
+
+    @include mobile {
+      padding-right: 0;
+    }
   }
 
   &--address {
     width: 61%;
     margin-left: auto;
     margin-right: 5%;
+
+    @include laptop {
+      margin-left: 0;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
 
@@ -80,4 +156,13 @@
     color: #495057;
 
   }
+}
+
+.data {
+  @include mobile {
+    h1 {
+      margin-bottom: 8px;
+    }
+  }
+
 }

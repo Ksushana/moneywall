@@ -12,7 +12,7 @@
 </head>
 
 <body class="passport-page">
-  <header class="header"><a class="header__logo" href="main.html"><img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="227" height="36" alt="Moneywall"></a></header>
+  <header class="header"><a class="header__logo" href="welcome.html"><img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="227" height="36" alt="Moneywall"></a></header>
   <main>
     <div class="container-top">
       <div class="container">
@@ -29,15 +29,15 @@
           <p class="onethird"><label for="patronymic">Отчество</label><input type="text" id="patronymic" name="patronymic" pattern="^[А-Яа-яЁёs]+$" required></p>
           <p class="small"><label for="patronymic">Дата рождения</label><input type="date" id="birthday" name="birthday" required></p>
           <p class="radio"><span>Пол</span><input class="visually-hidden" type="radio" name="gender" value="female" id="female" checked><label for="female">Жен</label><input class="visually-hidden" type="radio" name="gender" value="male" id="male"><label for="male">Муж</label></p>
-          <p class="grow"><label for="birthplace">Место рождения</label><input type="text" name="birthplace" id="birthplace" required></p>
+          <p class="grow"><label for="birthplace">Место рождения</label><textarea id="birthplace" name="birthplace" cols="30" rows="1"></textarea></p>
           <p class="break"></p>
           <p class="medium"><label for="number">Серия и нормер</label><input type="text" name="number" id="number" min="1" required></p>
           <p class="small-fix"><label for="issuedate">Дата выдачи</label><input type="date" name="issuedate" id="issuedate" required></p>
-          <p class="small-fix"><label for="code">Код подразделения</label><input type="text" name="code" id="code" required></p>
+          <p class="small-fix mobile"><label for="code">Код подразделения</label><input type="text" name="code" id="code" required></p>
           <p class="break noheight"></p>
           <p class="medium"><label for="postcode">Почтовый индекс</label><input type="text" name="postcode" id="postcode" min="1" required></p>
-          <p class="grow"><label for="address">Адрес регистрации</label><input type="text" name="address" id="address" required></p>
-          <p class="break noheight"></p><button class="btn-blue" type="submit">Применить</button>
+          <p class="grow"><label for="address">Адрес регистрации</label><textarea id="address" name="address" cols="30" rows="1"></textarea></p>
+          <p class="break noheight"></p><button class="btn-blue" type="submit">Далее</button>
         </form>
       </div>
     </div>

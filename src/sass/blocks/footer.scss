@@ -3,19 +3,35 @@
   display: flex;
   justify-content: space-between;
   padding: 17px 163px 20px;
-  background-color: $color-white;
+  background-color: #f0f0f0;
+  flex-wrap: wrap;
+
+  @include tablet {
+    padding: 15px 65px 10px;
+  }
+  @include mobile {
+    padding: 17px 20px 10px 21px;
+  }
   a {
     display: block;
   }
 
   .footer__links {
+
+
     a {
       font-weight: normal;
       font-size: 18px;
       line-height: 22px;
       text-decoration-line: underline;
       color: $color-blue;
+
+      @include mobile {
+        margin-bottom: 21px;
+      }
     }
+
+
 
   }
   .footer__contacts {
@@ -29,8 +45,17 @@ text-align: right;
 
 color: #000000;
 
+@include mobile {
+  margin-top: 49px;
+  text-align: left;
+}
+
     p {
       margin: 0;
+
+      @include mobile {
+        margin-top: 27px;
+      }
     }
   }
 }

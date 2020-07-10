@@ -3,11 +3,33 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 121px;
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+
+  @include mobile {
+    margin-top: 51px;
+    margin-bottom: 102px;
+  }
 }
 
 .pass-photo__upload {
 
   width: 31.4%;
+
+  @include tablet {
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  @include mobile {
+    width: 89%;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 39px;
+  }
 
   label {
     display: block;
@@ -28,6 +50,12 @@
 
     padding: 32px 19% 36px;
     transition: box-shadow 0.4s;
+    cursor: pointer;
+
+    @include mobile {
+      height: 171px;
+      padding: 20px 16% 25px;
+    }
 
     svg {
       display: block;
@@ -47,6 +75,25 @@ box-shadow: 0px 0px 37px 0px rgba(219,212,219,1);
   flex-grow: 1;
   max-width: 31.5%;
   padding-left: 8.5%;
+
+  @include tablet {
+    width: 45%;
+    max-width: 45%;
+    margin-right: 5%;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
+  @include mobile {
+    width: 89%;
+    max-width: 89%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+  }
+
   p {
     font-weight: 300;
     font-size: 14px;
@@ -56,5 +103,12 @@ box-shadow: 0px 0px 37px 0px rgba(219,212,219,1);
 
 
     color: #000000;
+
+    @include mobile {
+      order: 1;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 41px;
+    }
   }
 }
