@@ -23,7 +23,7 @@ block content
           input( type="text" id="patronymic" name="patronymic"  pattern="^[А-Яа-яЁё\s]+$" required)
         p.small
           label(for="birthday") Дата рождения
-          input( type="text" id="birthday" name="birthday" required)
+          input( type="date" id="birthday" name="birthday" required)
         p.radio
           span Пол
 
@@ -42,7 +42,7 @@ block content
           input( type="text" name="number"  id="number" min="1" required)
         p.small-fix
           label(for="issuedate") Дата выдачи
-          input( type="text" name="issuedate"  id="issuedate" required)
+          input( type="date" name="issuedate"  id="issuedate" required)
         p.small-fix.mobile
           label(for="code") Код подразделения
           input( type="text" name="code"  id="code" required)
