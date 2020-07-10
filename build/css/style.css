@@ -640,7 +640,7 @@ input, textarea, select {
 @media (max-width: 767px) {
   .welcome.old .contracts__accordion-header {
     display: block;
-    border: 0.5px solid #C5CCD1;
+    border: 0.5px solid #dde2e5;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 5px;
