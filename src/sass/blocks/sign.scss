@@ -116,6 +116,9 @@
   background-color:  $color-white;
 
   @include mobile {
+    main {
+      height: calc( 100vh - 75px );
+    }
     .container__header {
       padding: 6px 22px 7px;
     }

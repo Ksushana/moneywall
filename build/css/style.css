@@ -953,7 +953,7 @@ input, textarea, select {
 
 .contract__item {
   background: #ffffff;
-  border: 0.5px solid #C5CCD1;
+  border: 0.5px solid #dde2e5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
@@ -1616,6 +1616,9 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 767px) {
+  .sign-page main {
+    height: calc( 100vh - 75px);
+  }
   .sign-page .container__header {
     padding: 6px 22px 7px;
   }
