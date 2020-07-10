@@ -596,7 +596,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .welcome.old .container {
     padding-left: 5px;
     padding-right: 5px;
@@ -929,6 +929,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   bottom: -31px;
   right: -342px;
+}
+
+.contracts__note a {
+  text-decoration: underline;
 }
 
 @media (max-width: 767px) {
