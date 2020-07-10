@@ -581,6 +581,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
 }
 
+input, textarea, select {
+  -webkit-appearance: none;
+}
+
 /* Blocks */
 .welcome span.old {
   display: none;
