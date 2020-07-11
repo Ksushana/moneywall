@@ -140,7 +140,7 @@
         width: 171px;
 
         @include mobile {
-          width: 155px;
+          width: 185px;
         }
       }
 
@@ -151,11 +151,11 @@
 
 
         @include mobile {
-          width: 152px;
+          width: 185px;
 
           &.mobile {
-            width: 150px;
-            margin-right: 0;
+            width: 185px;
+            // margin-right: 0;
           }
         }
       }

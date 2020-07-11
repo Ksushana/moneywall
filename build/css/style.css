@@ -1215,7 +1215,7 @@ input, textarea, select {
 
 @media (max-width: 767px) {
   .passport-form form p.small {
-    width: 155px;
+    width: 185px;
   }
 }
 
@@ -1226,11 +1226,10 @@ input, textarea, select {
 
 @media (max-width: 767px) {
   .passport-form form p.small-fix {
-    width: 152px;
+    width: 185px;
   }
   .passport-form form p.small-fix.mobile {
-    width: 150px;
-    margin-right: 0;
+    width: 185px;
   }
 }
 
