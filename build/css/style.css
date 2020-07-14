@@ -1920,7 +1920,7 @@ textarea:-webkit-autofill:active {
 
 @media (max-width: 767px) {
   .passport-data__item--birthdate {
-    padding-right: 5%;
+    padding-right: 16px;
     width: 150px;
   }
 }
