@@ -74,7 +74,8 @@
   }
 
   &--name {
-    padding-right: 13.4%;
+    padding-right: 74px;
+    width: 350px;
 
     @include mobile {
       padding-right: 0;
@@ -82,43 +83,72 @@
   }
 
   &--birthdate {
-    padding-right: 7%;
+    padding-right: 38px;
+    width: 153px;
 
     @include mobile {
       padding-right: 5%;
+      width: 150px;
     }
+  }
+
+  &--gender   {
+    width: 50px;
   }
 
   &--birthplace {
     padding-bottom: 48px;
     margin-right: 80px;
+    width: 440px;
     @include mobile {
       padding-right: 0;
       margin-right: 25px;
       padding-bottom: 41px;
-
+      width: 100%;
     }
   }
 
   &--code {
+    width: 27%;
+
+    @include laptop {
+      width: 40%;
+    }
     @include mobile {
-      margin-right: 13%;
+      padding-right: 20px;
+      width: 172px;
     }
   }
 
   &--passport {
-    padding-right: 15%;
+    padding-right: 20px;
+    width: 39.5%;
 
     @include mobile {
-      padding-right: 19%;
+      padding-right: 63px;
+      width: 172px;
     }
   }
 
   &--passport-date {
-    padding-right: 11.3%;
+    padding-right: 20px;
+    width: 32.7%;
 
     @include mobile {
       padding-right: 0;
+      width: 109px;
+    }
+  }
+
+  &--zip   {
+    width: 61px;
+
+    @include laptop {
+      width: 40%;
+    }
+
+    @include mobile {
+      width: 30%;
     }
   }
 
@@ -129,6 +159,7 @@
 
     @include laptop {
       margin-left: 0;
+      width: 80%;
     }
 
     @include mobile {
